@@ -1,0 +1,40 @@
+.navbar-brand-1 {
+    display: inline-block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.fc-dark {
+    color: #343a40!important;
+}
+
+.navbar-1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* padding: .5rem 1rem; */
+}
+
+.border-color {
+    border:3px solid rgba(43, 46, 243, 0.125)!important
+}
+
+@media (max-width: 992px) {
+.background-change {
+    background-color: #343a40!important;
+    }
+.nav-link {
+    color:white!important;
+    }
+}
