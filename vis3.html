@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloudiness</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Navigation bar behavior/options -->
+        <nav class="navbar-1 navbar-expand-lg navbar-light background-change">
+            <a class="navbar-brand navbar-brand-1 bg-dark text-white" href="index.html">Equatorial Weather</a>
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse flex-row-reverse background-change" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Visualizations <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="vis1.html">Temperature</a>
+                      <a class="dropdown-item" href="vis2.html">Humidity</a>
+                      <a class="dropdown-item" href="vis4.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
+            </div>
+            
+        </nav>
+        <div class="container">
+            <!-- Summary and Sidebar sections -->
+            <div class="row">
+            <!-- Primary column for plot image and analysis -->
+                <div class="col-md-7">
+                    <h1 class='fc-dark pt-5 mt-5'>Cloudiness</h1><br>
+                    <div class="image-wrapper float-left pr-2">
+                        <img src="Resources\assets\images\Fig3.png" width='100%' alt="Latitude vs. Humidity">
+                    </div>
+                    <div class="single-post-content-wrapper">
+                        This scatter plot shows the relationship between cities' latitude and the observed cloudiness. From the graph we can see cities across all latitudes can have cloudiness ranging from 0 to 100% and no distinguishable trend.
+                    </div>    
+                </div>
+                <!-- Sidebar of plot options -->
+                <div class="col-md-5">
+                    <h3 class='fc-dark pt-5 pb-5 mt-5'>Visualizations</h3><br>
+                        <div class="card-group">
+                            <div class="card">
+                              <a href=vis1.html>
+                                <img class="card-img-top" src="Resources\assets\images\Fig1.png" alt="Max Temperature Plot">
+                              </a> 
+                            </div>
+                            <div class="card">
+                              <a href=vis2.html>
+                                <img class="card-img-top" src="Resources\assets\images\Fig2.png" alt="Humidity Plot">
+                              </a>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card border-color">
+                                <a href=vis3.html>
+                                    <img class="card-img-top" src="Resources\assets\images\Fig3.png" alt="Cloudiness Plot">
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href=vis4.html>
+                                    <img class="card-img-top" src="Resources\assets\images\Fig4.png" alt="Wind Speed Plot">
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+      
+</html>
